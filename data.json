@@ -173,5 +173,18 @@
     "warningCount": 2,
     "employmentStatus": "نشط",
     "notes": ""
+  },
+  {
+    "name": "TEST",
+    "code": "CON-L841",
+    "articleCount": 0,
+    "latestArticleTitle": "",
+    "publicationStatus": "لم ينشر",
+    "reportStatus": "لم يُحدد",
+    "stage": "جاري التدقيق",
+    "publishPlace": "غير محدد",
+    "warningCount": 0,
+    "employmentStatus": "نشط",
+    "notes": ""
   }
 ]
