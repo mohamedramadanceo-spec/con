@@ -143,5 +143,18 @@
     "warningCount": 0,
     "employmentStatus": "خارج Con",
     "notes": "ورد اسمه في تقرير يوليو ضمن من أصبح خارج Con."
+  },
+  {
+    "name": "TEST CON",
+    "code": "CON-B8UX",
+    "articleCount": 0,
+    "latestArticleTitle": "",
+    "publicationStatus": "لم ينشر",
+    "reportStatus": "لم يُحدد",
+    "stage": "جاري التدقيق",
+    "publishPlace": "غير محدد",
+    "warningCount": 0,
+    "employmentStatus": "نشط",
+    "notes": ""
   }
 ]
