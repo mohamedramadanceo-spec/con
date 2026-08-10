@@ -157,5 +157,18 @@
     "warningCount": 0,
     "employmentStatus": "نشط",
     "notes": ""
+  },
+  {
+    "name": "بوم بوم",
+    "code": "6666",
+    "articleCount": 0,
+    "latestArticleTitle": "",
+    "publicationStatus": "منشور",
+    "reportStatus": "مقبول",
+    "stage": "جاري المراجعة",
+    "publishPlace": "المجلة الإلكترونية",
+    "warningCount": 2,
+    "employmentStatus": "نشط",
+    "notes": ""
   }
 ]
