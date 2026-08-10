@@ -27,15 +27,16 @@
   },
   {
     "name": "ريم نديم",
-    "code": "CON-4X8P",
-    "articleCount": 0,
+    "code": "CON8",
+    "articleCount": 2,
+    "latestArticleTitle": "",
     "publicationStatus": "لم ينشر",
-    "reportStatus": "لم يُحدد",
-    "stage": "جاري التدقيق",
-    "publishPlace": "غير محدد",
+    "reportStatus": "مقبول",
+    "stage": "تمت المراجعة",
+    "publishPlace": "الموقع الإلكتروني",
     "warningCount": 1,
     "employmentStatus": "نشط",
-    "notes": "يونيو: بلا إنذارات. يوليو: إنذار."
+    "notes": "يونيو: بلا إنذارات. يوليو: إنذار.\nللكاتبة مقال (صور من تاريخ مصر القديمة وهو منشور  - ومقال رفض أم قتل، مؤهل للنشر)."
   },
   {
     "name": "أسماء حمدي",
