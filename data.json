@@ -40,15 +40,16 @@
   },
   {
     "name": "أسماء حمدي",
-    "code": "CON-6N3R",
-    "articleCount": 0,
-    "publicationStatus": "لم ينشر",
-    "reportStatus": "لم يُحدد",
-    "stage": "جاري التدقيق",
-    "publishPlace": "غير محدد",
+    "code": "CON7",
+    "articleCount": 5,
+    "latestArticleTitle": "",
+    "publicationStatus": "منشور",
+    "reportStatus": "مقبول",
+    "stage": "تمت المراجعة",
+    "publishPlace": "المجلة الإلكترونية",
     "warningCount": 2,
     "employmentStatus": "نشط",
-    "notes": "يونيو: إنذار. يوليو: إنذاران."
+    "notes": "يونيو: إنذار. يوليو: إنذاران.\nنُشر على الموقع 3 مقالات ونشر في المجلة 2 مقال."
   },
   {
     "name": "منار فوزي",
