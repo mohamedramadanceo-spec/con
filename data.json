@@ -79,15 +79,16 @@
   },
   {
     "name": "أسماء كمال",
-    "code": "CON-5H2W",
-    "articleCount": 0,
+    "code": "CON4",
+    "articleCount": 4,
+    "latestArticleTitle": "",
     "publicationStatus": "لم ينشر",
-    "reportStatus": "لم يُحدد",
-    "stage": "جاري التدقيق",
-    "publishPlace": "غير محدد",
+    "reportStatus": "مقبول",
+    "stage": "تمت المراجعة",
+    "publishPlace": "الموقع الإلكتروني",
     "warningCount": 1,
     "employmentStatus": "نشط",
-    "notes": "يونيو: إنذار. يوليو: إنذار."
+    "notes": "يونيو: إنذار.\nنشر للكاتبة 3 مقالات، آخرهم (عن ملك سليمان)، وينشر لها (كيف تصنع شريرًا)."
   },
   {
     "name": "أدهم محروس",
