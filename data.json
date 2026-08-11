@@ -92,16 +92,16 @@
   },
   {
     "name": "شدن محمد",
-    "code": "CON-2F6A",
-    "articleCount": 0,
+    "code": "CON3",
+    "articleCount": 2,
     "latestArticleTitle": "",
-    "publicationStatus": "منشور",
+    "publicationStatus": "لم ينشر",
     "reportStatus": "لم يُحدد",
     "stage": "جاري التدقيق",
-    "publishPlace": "غير محدد",
+    "publishPlace": "الموقع الإلكتروني",
     "warningCount": 1,
     "employmentStatus": "نشط",
-    "notes": "يونيو ويوليو: إنذار."
+    "notes": "يونيو ويوليو: إنذار.\nنشر للكاتبة مقال النسوية ولكنه حذف من جوجل، وقيد العمل الآن مقال (حالة طقس مشاعر المراهقين)."
   },
   {
     "name": "جوري محمد",
