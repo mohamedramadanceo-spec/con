@@ -118,14 +118,14 @@
   },
   {
     "name": "سارة وليد",
-    "code": "5555",
+    "code": "00",
     "articleCount": 0,
     "latestArticleTitle": "",
     "publicationStatus": "منشور",
-    "reportStatus": "لم يُحدد",
-    "stage": "جاري المراجعة",
+    "reportStatus": "مرفوض",
+    "stage": "تمت المراجعة",
     "publishPlace": "غير محدد",
-    "warningCount": 0,
+    "warningCount": 3,
     "employmentStatus": "خارج Con",
     "notes": "ورد اسمها في تقرير يونيو ضمن من أصبح خارج Con."
   },
