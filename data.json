@@ -143,15 +143,16 @@
   },
   {
     "name": "أدهم نصار",
-    "code": "CON-4R9E",
-    "articleCount": 0,
+    "code": "0",
+    "articleCount": 3,
+    "latestArticleTitle": "",
     "publicationStatus": "لم ينشر",
     "reportStatus": "لم يُحدد",
     "stage": "جاري التدقيق",
     "publishPlace": "غير محدد",
-    "warningCount": 0,
+    "warningCount": 3,
     "employmentStatus": "خارج Con",
-    "notes": "ورد اسمه في تقرير يوليو ضمن من أصبح خارج Con."
+    "notes": "ورد اسمه في تقرير يوليو ضمن من أصبح خارج Con.\nنشر له 3 مقالات، منهم مقالة أعيدت نشرها في المجلة."
   },
   {
     "name": "TEST CON",
