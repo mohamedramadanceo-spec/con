@@ -66,14 +66,15 @@
   },
   {
     "name": "روميساء علي",
-    "code": "CON-3K7Z",
-    "articleCount": 0,
-    "publicationStatus": "لم ينشر",
+    "code": "CON5",
+    "articleCount": 1,
+    "latestArticleTitle": "",
+    "publicationStatus": "منشور",
     "reportStatus": "لم يُحدد",
-    "stage": "جاري التدقيق",
-    "publishPlace": "غير محدد",
+    "stage": "تمت المراجعة",
+    "publishPlace": "الموقع الإلكتروني",
     "warningCount": 2,
-    "employmentStatus": "نشط",
+    "employmentStatus": "متوقف",
     "notes": "يونيو: إنذار. يوليو: إنذاران."
   },
   {
