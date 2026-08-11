@@ -141,5 +141,18 @@
     "warningCount": 3,
     "employmentStatus": "خارج Con",
     "notes": "ورد اسمه في تقرير يوليو ضمن من أصبح خارج Con.\nنشر له 3 مقالات، منهم مقالة أعيدت نشرها في المجلة."
+  },
+  {
+    "name": "إيمان حسام",
+    "code": "CON2",
+    "articleCount": 1,
+    "latestArticleTitle": "",
+    "publicationStatus": "منشور",
+    "reportStatus": "مقبول",
+    "stage": "تمت المراجعة",
+    "publishPlace": "المجلة الإلكترونية",
+    "warningCount": 0,
+    "employmentStatus": "نشط",
+    "notes": "كاتبة حديثة، ونشر لها المقالة مكافأة على اجتيازها المرحلة التدريبية للمجموعة c"
   }
 ]
