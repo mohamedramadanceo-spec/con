@@ -154,5 +154,18 @@
     "warningCount": 0,
     "employmentStatus": "نشط",
     "notes": "كاتبة حديثة، ونشر لها المقالة مكافأة على اجتيازها المرحلة التدريبية للمجموعة c"
+  },
+  {
+    "name": "محمد رمضان",
+    "code": "CON0",
+    "articleCount": 4,
+    "latestArticleTitle": "",
+    "publicationStatus": "منشور",
+    "reportStatus": "مقبول",
+    "stage": "جاري التدقيق",
+    "publishPlace": "المجلة الإلكترونية",
+    "warningCount": 0,
+    "employmentStatus": "نشط",
+    "notes": ""
   }
 ]
