@@ -57,12 +57,12 @@
     "articleCount": 2,
     "latestArticleTitle": "",
     "publicationStatus": "لم ينشر",
-    "reportStatus": "لم يُحدد",
-    "stage": "جاري التدقيق",
-    "publishPlace": "الموقع الإلكتروني",
+    "reportStatus": "مرفوض",
+    "stage": "تمت المراجعة",
+    "publishPlace": "غير محدد",
     "warningCount": 1,
     "employmentStatus": "نشط",
-    "notes": "يونيو ويوليو: إنذار ورفضان في التقريرين.\nنُشر للكاتبة مقال على الموقع، والثاني قيد العمل."
+    "notes": "يونيو ويوليو: إنذار ورفضان في التقريرين.\nنُشر للكاتبة مقال على الموقع، والثاني تم رفضه."
   },
   {
     "name": "روميساء علي",
