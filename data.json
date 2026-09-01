@@ -83,12 +83,16 @@
     "articleCount": 2,
     "latestArticleTitle": "",
     "publicationStatus": "لم ينشر",
-    "reportStatus": "مقبول",
-    "stage": "تمت المراجعة",
-    "publishPlace": "الموقع الإلكتروني",
+    "reportStatus": "لم يُحدد",
+    "stage": "جاري المراجعة",
+    "reviewStatus": "لم تبدأ",
+    "proofreadingStatus": "لم يبدأ",
+    "reviewEndDate": "2026-09-07",
+    "monthlyRating": 0,
+    "publishPlace": "غير محدد",
     "warningCount": 1,
     "employmentStatus": "نشط",
-    "notes": "يونيو ويوليو: إنذار.\nآخر مقالة (مشاعر المراهقين مقبول)"
+    "notes": "يونيو ويوليو: إنذار."
   },
   {
     "name": "جوري محمد",
