@@ -35,21 +35,21 @@
     "stage": "تمت المراجعة",
     "publishPlace": "الموقع الإلكتروني",
     "warningCount": 1,
-    "employmentStatus": "نشط",
-    "notes": "يونيو: بلا إنذارات. يوليو: إنذار.\nللكاتبة مقال (صور من تاريخ مصر القديمة وهو منشور  - ومقال رفض أم قتل، مؤهل للنشر)."
+    "employmentStatus": "متوقف",
+    "notes": ""
   },
   {
     "name": "أسماء حمدي",
     "code": "CON7",
-    "articleCount": 5,
+    "articleCount": 6,
     "latestArticleTitle": "",
     "publicationStatus": "منشور",
     "reportStatus": "مقبول",
     "stage": "تمت المراجعة",
-    "publishPlace": "المجلة الإلكترونية",
+    "publishPlace": "الموقع الإلكتروني",
     "warningCount": 2,
     "employmentStatus": "نشط",
-    "notes": "يونيو: إنذار. يوليو: إنذاران.\nنُشر على الموقع 3 مقالات ونشر في المجلة 2 مقال."
+    "notes": "آخر مقالة بأغسطس"
   },
   {
     "name": "منار فوزي",
