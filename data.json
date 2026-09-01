@@ -115,18 +115,5 @@
     "warningCount": 0,
     "employmentStatus": "نشط",
     "notes": "آخر مقالة بأغسطس"
-  },
-  {
-    "name": "تجربة",
-    "code": "تجربة",
-    "articleCount": 1,
-    "latestArticleTitle": "",
-    "publicationStatus": "منشور",
-    "reportStatus": "مرفوض",
-    "stage": "جاري المراجعة",
-    "publishPlace": "المجلة الإلكترونية",
-    "warningCount": 0,
-    "employmentStatus": "نشط",
-    "notes": ""
   }
 ]
