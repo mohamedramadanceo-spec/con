@@ -107,13 +107,17 @@
     "name": "إيمان حسام",
     "code": "CON2",
     "articleCount": 2,
-    "latestArticleTitle": "",
-    "publicationStatus": "منشور",
+    "latestArticleTitle": "نقصٌ لا يُغتفر",
+    "publicationStatus": "لم ينشر",
     "reportStatus": "مقبول",
-    "stage": "تمت المراجعة",
+    "stage": "مكتملة",
+    "reviewStatus": "مكتملة",
+    "proofreadingStatus": "مكتمل",
+    "reviewEndDate": "2026-08-31",
+    "monthlyRating": 2,
     "publishPlace": "المجلة الإلكترونية",
     "warningCount": 0,
     "employmentStatus": "نشط",
-    "notes": "آخر مقالة بأغسطس"
+    "notes": ""
   }
 ]
