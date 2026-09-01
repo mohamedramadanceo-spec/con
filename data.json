@@ -42,14 +42,18 @@
     "name": "أسماء حمدي",
     "code": "CON7",
     "articleCount": 6,
-    "latestArticleTitle": "",
-    "publicationStatus": "منشور",
+    "latestArticleTitle": "القراءة عالم بين ثنايا الأسطر",
+    "publicationStatus": "لم ينشر",
     "reportStatus": "مقبول",
     "stage": "تمت المراجعة",
+    "reviewStatus": "مكتملة",
+    "proofreadingStatus": "جارٍ",
+    "reviewEndDate": "2026-08-31",
+    "monthlyRating": 1,
     "publishPlace": "الموقع الإلكتروني",
     "warningCount": 2,
     "employmentStatus": "نشط",
-    "notes": "آخر مقالة بأغسطس"
+    "notes": ""
   },
   {
     "name": "روميساء علي",
