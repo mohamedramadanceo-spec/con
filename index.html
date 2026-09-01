@@ -327,6 +327,7 @@ const ADMIN_CODE='CON-ADMIN';
 let writers=[];
 let dataReady=false;
 let remoteMeta=null;
+let remoteSha=null;
 let ghToken='';
 let currentWriter=null;
 let accessRole=null;
@@ -446,18 +447,34 @@ function b64decode(b64){const bin=atob(b64.replace(/\s/g,''));const bytes=Uint8A
 async function githubFile(){
  const c=remoteMeta||ghConfig();
  if(!c.owner||!c.repo)throw Error('حدّد مالك المستودع واسم المستودع أولًا.');
- const url=`https://api.github.com/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}/contents/${c.path.split('/').map(encodeURIComponent).join('/')}?ref=${encodeURIComponent(c.branch)}`;
- const r=await fetch(url,{headers:{Accept:'application/vnd.github+json',Authorization:`Bearer ${ghToken}`}});
- if(!r.ok)throw Error(`تعذر الوصول إلى data.json (${r.status}).`);return await r.json();
+ const base=`https://api.github.com/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}/contents/${c.path.split('/').map(encodeURIComponent).join('/')}`;
+ const url=`${base}?ref=${encodeURIComponent(c.branch)}&_=${Date.now()}`;
+ const r=await fetch(url,{cache:'no-store',headers:{Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2026-03-10',Authorization:`Bearer ${ghToken}`}});
+ if(!r.ok)throw Error(`تعذر الوصول إلى data.json (${r.status}).`);
+ const file=await r.json();
+ if(file?.sha)remoteSha=file.sha;
+ return file;
 }
 async function saveRemoteData(operation=null){
  const c=remoteMeta||ghConfig();
+ if(!c.owner||!c.repo)throw Error('حدّد مالك المستودع واسم المستودع أولًا.');
  const url=`https://api.github.com/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}/contents/${c.path.split('/').map(encodeURIComponent).join('/')}`;
  let desired=writers.map(x=>({...x}));
- for(let attempt=0;attempt<4;attempt++){
-   const current=await githubFile();
+ let lastError=null;
+ for(let attempt=0;attempt<5;attempt++){
+   let current;
+   // إذا كان لدينا SHA ناتج من آخر حفظ ناجح، فهذه هي النسخة التي أنشأناها نحن.
+   // لا نعيد GET لها مباشرة؛ لأن GitHub قد يعيد مؤقتًا النسخة السابقة بعد الـ commit.
+   if(remoteSha && attempt===0){
+     current={sha:remoteSha,content:b64encode(JSON.stringify(desired,null,2)+'\n')};
+   }else{
+     current=await githubFile();
+   }
+
    let serverData=[];
    try{serverData=JSON.parse(b64decode(current.content));if(!Array.isArray(serverData))serverData=[]}catch{serverData=[]}
+
+   // في حالة 409 فقط، أعد بناء التعديل فوق آخر نسخة فعلية، لا فوق نسخة محلية قديمة.
    if(attempt>0 && operation && operation.type!=='replace'){
      desired=serverData.map(x=>({...x}));
      if(operation.type==='upsert'){
@@ -467,20 +484,34 @@ async function saveRemoteData(operation=null){
        desired=desired.filter(x=>String(x.code||'').trim().toUpperCase()!==String(operation.code||'').trim().toUpperCase());
      }
    }
+
    const content=b64encode(JSON.stringify(desired,null,2)+'\n');
-   const r=await fetch(url,{method:'PUT',headers:{Accept:'application/vnd.github+json','Content-Type':'application/json',Authorization:`Bearer ${ghToken}`},body:JSON.stringify({message:'Update Con data',content,sha:current.sha,branch:c.branch})});
-   if(r.ok){writers=desired;setSyncStatus('متصل • آخر حفظ الآن',true);return true}
+   const r=await fetch(url,{method:'PUT',cache:'no-store',headers:{Accept:'application/vnd.github+json','Content-Type':'application/json','X-GitHub-Api-Version':'2026-03-10',Authorization:`Bearer ${ghToken}`},body:JSON.stringify({message:'Update Con data',content,sha:current.sha,branch:c.branch})});
+
    let j=null;try{j=await r.json()}catch{}
-   if(r.status===409 && attempt<3){await new Promise(res=>setTimeout(res,250*(attempt+1)));continue}
-   let msg=`فشل النشر (${r.status}).`;if(j?.message)msg+=` ${j.message}`;throw Error(msg)
+   if(r.ok){
+     writers=desired;
+     remoteSha=j?.content?.sha||null;
+     setSyncStatus('متصل • آخر حفظ الآن',true);
+     return true;
+   }
+
+   lastError=j?.message||`فشل النشر (${r.status}).`;
+   if(r.status!==409)throw Error(`فشل النشر (${r.status}). ${lastError}`);
+
+   // 409 يعني أن SHA المرسل لم يعد هو SHA الحالي. لا ننتظر عشوائيًا:
+   // نجبر قراءة API جديدة تمامًا، ثم نعيد المحاولة باستخدام SHA الذي أعادته.
+   remoteSha=null;
+   if(attempt<4)continue;
  }
- throw Error('تعذر نشر التحديث بعد عدة محاولات.');
+ throw Error(`تعذر حفظ التعديل بعد تحديث نسخة GitHub. ${lastError||''}`.trim());
 }
+
 async function connectGitHub(){
  const c=ghConfig(), token=(document.getElementById('ghToken')?.value||'').trim(),err=document.getElementById('cloudError');err.textContent='';
  if(!c.owner||!c.repo||!token){err.textContent='أكمل بيانات المستودع والرمز.';return}
  ghToken=token;remoteMeta=c;localStorage.setItem('ana_kawn_github_config',JSON.stringify(c));
- try{const file=await githubFile();writers=JSON.parse(b64decode(file.content));dataReady=true;updateStats();renderHome();renderAdmin();setSyncStatus('متصل • البيانات محدثة',true);closeCloudSettings();toast('تم الاتصال وجلب أحدث البيانات.')}catch(e){ghToken='';err.textContent=e.message||'تعذر الاتصال بـ GitHub.';setSyncStatus('فشل الاتصال')}
+ try{const file=await githubFile();remoteSha=file.sha||remoteSha;writers=JSON.parse(b64decode(file.content));dataReady=true;updateStats();renderHome();renderAdmin();setSyncStatus('متصل • البيانات محدثة',true);closeCloudSettings();toast('تم الاتصال وجلب أحدث البيانات.')}catch(e){ghToken='';err.textContent=e.message||'تعذر الاتصال بـ GitHub.';setSyncStatus('فشل الاتصال')}
 }
 async function loadRemoteData(){
  try{
@@ -491,7 +522,7 @@ async function loadRemoteData(){
   if(!r.ok)throw Error();
   const d=await r.json();
   if(!Array.isArray(d))throw Error();
-  writers=d;dataReady=true;updateStats();renderHome();renderAdmin();setSyncStatus('متصل • البيانات محدثة',true);
+  writers=d;dataReady=true;remoteSha=null;updateStats();renderHome();renderAdmin();setSyncStatus('متصل • البيانات محدثة',true);
  }catch{
   try{
    const r=await fetch(`./data.json?v=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw Error();const d=await r.json();if(!Array.isArray(d))throw Error();writers=d;dataReady=true;updateStats();renderHome();renderAdmin();
