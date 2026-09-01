@@ -3,10 +3,10 @@
 <html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#050913">
+<meta name="theme-color" content="#f5efe6">
 <title>أنا كون — CON Writers Network</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
 :root{--bg:#050913;--panel:#0b1220;--panel2:#101a2b;--line:rgba(148,163,184,.15);--text:#eaf3ff;--muted:#8192ab;--cyan:#25d8ff;--purple:#9c6cff;--green:#35e6a3;--yellow:#ffd05a;--red:#ff6687;--shadow:0 28px 90px rgba(0,0,0,.42)}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Tajawal,Cairo,sans-serif}
 body{overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:linear-gradient(rgba(37,216,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(37,216,255,.028) 1px,transparent 1px);background-size:34px 34px}
@@ -166,6 +166,89 @@ body,.panel,.stat,.topbar,.gate-card,.modal-card,.entry-card,.summary-card,.exit
 }
 #ultimateCanvas{transition:opacity .12s ease}
 </style>
+<style id="con-v2-theme">
+:root{--bg:#f5efe6;--bg2:#eee4d6;--panel:#fffdf9;--panel2:#faf5ee;--surface:rgba(255,253,249,.96);--surface2:#fffdf9;--line:rgba(92,58,45,.14);--line2:rgba(128,45,62,.28);--text:#2c211d;--muted:#75665d;--cyan:#7d3041;--purple:#9b5b69;--violet:#8f4f60;--pink:#a7475d;--green:#286c58;--yellow:#8a651d;--red:#a5304a;--shadow:0 18px 55px rgba(91,61,43,.11)}
+html{scroll-behavior:smooth}body{font-family:"Cairo",sans-serif!important;background:radial-gradient(circle at 8% 0%,rgba(157,83,72,.09),transparent 28%),radial-gradient(circle at 92% 100%,rgba(126,48,65,.08),transparent 30%),var(--bg)!important;color:var(--text)!important}body:before{opacity:.18;background-image:linear-gradient(rgba(126,48,65,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(126,48,65,.035) 1px,transparent 1px);background-size:38px 38px}body:after{opacity:.35;animation:none}
+.topbar{background:rgba(255,253,249,.88)!important;border-color:var(--line)!important;box-shadow:0 8px 30px rgba(86,58,43,.06)}.brand .mini,.brandmark{background:linear-gradient(135deg,#7d3041,#b66b72)!important;color:#fff!important;box-shadow:0 10px 28px rgba(125,48,65,.18)!important}.eyebrow{font-family:"Cairo",sans-serif!important;color:var(--cyan)!important;letter-spacing:1.1px!important}.btn,.back-btn,.iconbtn{background:rgba(255,253,249,.82)!important;color:var(--text)!important;border-color:var(--line)!important}.btn:hover,.iconbtn:hover{border-color:var(--line2)!important;color:var(--cyan)!important;background:#fffaf4!important;box-shadow:0 8px 24px rgba(125,48,65,.08)!important}.btn.primary,.gate-btn{background:linear-gradient(135deg,#7d3041,#a95765)!important;border-color:#7d3041!important;color:#fff!important;box-shadow:0 9px 24px rgba(125,48,65,.16)}.btn.danger{color:#a5304a!important}.panel,.stat,.summary-card,.gate-card,.modal-card{background:var(--surface)!important;border-color:var(--line)!important;box-shadow:var(--shadow)!important}.stat{background:linear-gradient(145deg,#fffdf9,#f8f0e6)!important}.search,.field input,.field select,.field textarea,.code-input{background:#fffdf9!important;color:var(--text)!important;border-color:var(--line)!important}.search:focus,.field input:focus,.field select:focus,.field textarea:focus,.code-input:focus{border-color:var(--line2)!important;box-shadow:0 0 0 3px rgba(125,48,65,.08)!important}.table th{background:#f2e9de!important;color:#705f56!important}.table td{border-color:rgba(92,58,45,.09)!important}.table tr:hover td{background:rgba(125,48,65,.035)!important}.info{background:#fbf6ef!important}.security{background:rgba(125,48,65,.045)!important;border-color:rgba(125,48,65,.14)!important;color:#67534b!important}.gate{background:radial-gradient(circle at 50% 18%,rgba(125,48,65,.09),transparent 34%),radial-gradient(circle at 78% 80%,rgba(180,107,114,.08),transparent 28%)}.entry-card{background:linear-gradient(145deg,#fffaf4,#f4eadf)!important;border-color:var(--line)!important;color:var(--text)!important}.entry-card.manager{background:linear-gradient(145deg,#f8ecee,#fffaf6)!important;border-color:rgba(125,48,65,.17)!important}.entry-card:hover{border-color:var(--line2)!important;box-shadow:0 16px 40px rgba(125,48,65,.09)!important}.entry-icon{color:#7d3041!important;background:rgba(125,48,65,.07)!important;border-color:rgba(125,48,65,.13)!important}.manager .entry-icon{color:#9b5b69!important}.summary-card.cyan strong{color:#7d3041}.summary-card.violet strong{color:#8f4f60}.summary-card.green strong{color:#286c58}.summary-card.gold strong{color:#8a651d}.toast{background:#fffdf9!important;color:var(--text)!important;border-color:rgba(125,48,65,.22)!important;box-shadow:0 15px 45px rgba(91,61,43,.16)!important}.modal{background:rgba(65,39,31,.36)!important}
+.article-status-panel{margin-top:18px;padding:18px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#fffdf9,#faf1e7);box-shadow:var(--shadow)}.article-status-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:13px}.article-status-head h3{margin:0;font-size:15px}.article-status-head small{color:var(--muted);font-size:10px}.article-status-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.status-item{padding:12px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.62)}.status-item small{display:block;color:var(--muted);font-size:9px;margin-bottom:6px}.status-item strong{font-size:12px;line-height:1.5}.rating-box{grid-column:span 2}.stars{display:flex;direction:rtl;gap:3px;align-items:center}.stars span{font-size:20px;line-height:1;color:#d5c8bc;cursor:default}.stars span.on{color:#a76a2b}.admin-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.admin-actions .iconbtn{width:36px;height:36px}.admin-quick{margin-top:8px;padding:8px;border:1px solid var(--line);border-radius:12px;background:#fbf6ef;display:flex;gap:6px;flex-wrap:wrap;align-items:center}.admin-quick strong{font-size:11px}.char-counter{display:flex;justify-content:space-between;color:var(--muted);font-size:9px;margin-top:4px}.char-counter.limit{color:#a5304a}
+body.con-dark{--bg:#160d12;--bg2:#201018;--panel:#24131b;--panel2:#2a1820;--surface:rgba(35,18,27,.96);--surface2:#2b1720;--line:rgba(244,208,214,.13);--line2:rgba(213,119,137,.38);--text:#f7ecee;--muted:#c2a9ae;--cyan:#d57a8c;--purple:#bb7284;--violet:#c78697;--pink:#e38ba0;--green:#68c5a3;--yellow:#e0bd70;--red:#e17b91;--shadow:0 22px 65px rgba(0,0,0,.34);background:radial-gradient(circle at 8% 0%,rgba(171,65,85,.18),transparent 30%),radial-gradient(circle at 92% 100%,rgba(113,34,52,.16),transparent 32%),var(--bg)!important}.con-dark .topbar{background:rgba(26,13,19,.88)!important}.con-dark .panel,.con-dark .stat,.con-dark .summary-card,.con-dark .gate-card,.con-dark .modal-card{background:var(--surface)!important}.con-dark .stat{background:linear-gradient(145deg,#2b1720,#211019)!important}.con-dark .search,.con-dark .field input,.con-dark .field select,.con-dark .field textarea,.con-dark .code-input,.con-dark .btn,.con-dark .back-btn,.con-dark .iconbtn{background:#1d1016!important;color:var(--text)!important}.con-dark .table th{background:#2b1820!important;color:#c9aeb3!important}.con-dark .info,.con-dark .article-status-panel,.con-dark .admin-quick{background:#2a1720!important}.con-dark .status-item{background:rgba(255,255,255,.025)}.con-dark .entry-card{background:linear-gradient(145deg,#2b1820,#211019)!important;color:var(--text)!important}.con-dark .entry-card.manager{background:linear-gradient(145deg,#301821,#211019)!important}.con-dark .security{color:#d9c2c6!important}.con-dark .modal{background:rgba(10,4,7,.68)!important}.con-dark .toast{background:#24131b!important;color:var(--text)!important}.con-dark .stars span{color:#72545c}.con-dark .stars span.on{color:#e0a35b}
+@media(max-width:900px){.article-status-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.topbar{height:auto;min-height:68px;padding:10px 12px;gap:8px}.brand h1{font-size:17px}.brand small{font-size:8px}.top-actions{gap:5px}.top-actions .btn{padding:8px 9px;font-size:11px}.layout{padding:15px 12px}.hero h2{font-size:27px}.hero p{font-size:12px}.panel-head{padding:14px}.tools{width:100%}.search{min-width:0;width:100%}.article-status-grid{grid-template-columns:1fr 1fr;gap:8px}.status-item{padding:10px}.rating-box{grid-column:span 2}.form-grid{grid-template-columns:1fr}.field{margin-bottom:10px}.modal{padding:10px}.modal-card{max-height:94vh;border-radius:16px}.modal-body{padding:14px}.gate-card{padding:25px 18px!important}.profile-side,.profile-main{padding:16px}.profile-grid{grid-template-columns:1fr 1fr}.latest-article-info{grid-column:span 2}}@media(max-width:380px){.profile-grid{grid-template-columns:1fr}.latest-article-info{grid-column:auto}.article-status-grid{grid-template-columns:1fr}.rating-box{grid-column:auto}.brand small{display:none}}
+
+/* CON v3 — fast theme switching */
+html, body, body *, body *::before, body *::after {
+  transition: none !important;
+}
+body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body.con-dark {
+  --bg:#18121f !important;
+  --surface:#241b2d !important;
+  --surface-2:#2b2035 !important;
+  --line:rgba(205,170,220,.16) !important;
+  --text:#f5edf8 !important;
+  --muted:#bdaec5 !important;
+  --cyan:#c89ad6 !important;
+  --cyan-2:#a878bc !important;
+  --cyan-soft:rgba(200,154,214,.13) !important;
+}
+body:not(.con-dark) {
+  --bg:#f4eee4 !important;
+  --surface:#fffaf2 !important;
+  --surface-2:#f8f1e7 !important;
+  --line:rgba(92,72,54,.14) !important;
+  --text:#2e2925 !important;
+  --muted:#776d64 !important;
+  --cyan:#5e735d !important;
+  --cyan-2:#7f9278 !important;
+  --cyan-soft:rgba(94,115,93,.11) !important;
+}
+/* Avoid expensive visual interpolation while switching themes. */
+body, .app, .shell, .card, .panel, .modal, .sidebar, header, nav, main, section, input, textarea, select, button {
+  transition: none !important;
+}
+</style>
+
+<style id="con-v3-performance">
+/* Fast, quiet rendering: no theme animation, minimal paint, contemporary cream day theme. */
+html{background:#f4eee4!important}
+body:not(.con-dark){
+ --bg:#f4eee4!important; --bg2:#eee6da!important; --panel:#fffaf2!important; --panel2:#f8f1e7!important;
+ --surface:#fffaf2!important; --surface2:#f8f1e7!important; --line:rgba(72,62,53,.13)!important;
+ --line2:rgba(91,116,99,.30)!important; --text:#302b27!important; --muted:#756c63!important;
+ --cyan:#5f7567!important; --cyan-2:#7e9585!important; --purple:#81709a!important; --violet:#8b7aa5!important;
+ --pink:#9b6d80!important; --green:#5d8a70!important; --yellow:#a47b3f!important; --red:#a45f6e!important;
+ --shadow:0 14px 38px rgba(67,55,43,.08)!important;
+}
+body:not(.con-dark) .gate-card,body:not(.con-dark) .panel,body:not(.con-dark) .stat,body:not(.con-dark) .summary-card,body:not(.con-dark) .modal-card{background:#fffaf2!important}
+body:not(.con-dark) .gate-btn,body:not(.con-dark) .btn.primary,body:not(.con-dark) .manager-btn{background:#5f7567!important;color:#fff!important}
+body:not(.con-dark) .topbar{background:rgba(255,250,242,.94)!important}
+body:not(.con-dark) .entry-card.manager{border-color:rgba(129,112,154,.25)!important}
+body.con-dark{
+ --bg:#181320!important; --bg2:#21192b!important; --panel:#251c30!important; --panel2:#2c2138!important;
+ --surface:#251c30!important; --surface2:#2c2138!important; --line:rgba(216,194,224,.14)!important;
+ --line2:rgba(184,139,204,.34)!important; --text:#f5edf8!important; --muted:#bcaec4!important;
+ --cyan:#c09ad0!important; --cyan-2:#a67db8!important; --purple:#a98ac1!important; --violet:#bd9ad0!important;
+ --pink:#cf9bb0!important; --green:#78b89a!important; --yellow:#d3ad6a!important; --red:#cf8298!important;
+ --shadow:0 18px 46px rgba(0,0,0,.28)!important;
+}
+/* Kill expensive interpolation during theme changes. */
+*,*::before,*::after{transition:none!important;animation-duration:0.001ms!important;animation-iteration-count:1!important}
+body{will-change:auto!important}
+#ultimateCanvas{opacity:.42!important;pointer-events:none!important}
+</style>
+<script>
+// Theme switch is deliberately synchronous: one class toggle, one storage write, no transition.
+window.toggleUltimateTheme=function(){
+  const dark=!document.body.classList.contains('con-dark');
+  document.body.classList.toggle('con-dark',dark);
+  document.body.classList.remove('light');
+  localStorage.setItem('con_theme_v2',dark?'dark':'light');
+};
+</script>
 </head>
 <body><canvas id="ultimateCanvas" width="1366" height="633" style="width: 1366px; height: 633px;"></canvas>
 
@@ -173,9 +256,9 @@ body,.panel,.stat,.topbar,.gate-card,.modal-card,.entry-card,.summary-card,.exit
 <section id="gate" class="gate hidden">
  <div class="gate-card dual-gate-card">
    <div class="gate-title">
-     <div class="eyebrow">CON // PRIVATE TEAM NETWORK</div>
+     <div class="eyebrow">مرحبًا بك في نظام كون!</div>
      <h1>أنا كون</h1>
-     <p>مساحة الفريق الداخلية — اختر نوع الدخول للمتابعة.</p>
+     
    </div>
 
    <div id="gateChooser" class="gate-chooser hidden">
@@ -203,13 +286,11 @@ body,.panel,.stat,.topbar,.gate-card,.modal-card,.entry-card,.summary-card,.exit
    <div id="adminLogin" class="login-panel">
      <div class="login-heading"><button class="back-btn" onclick="backToChooser()">→</button><div><div class="eyebrow">ADMIN ACCESS</div><h3>دخول المدير</h3></div></div>
      <div class="gate-label">كود الإدارة</div>
-     <input id="adminCodeInput" class="code-input" maxlength="24" autocomplete="off" placeholder="CON-ADMIN" onkeydown="if(event.key===&#39;Enter&#39;)unlockAdmin()">
+     <input id="adminCodeInput" type="password" class="code-input" maxlength="24" autocomplete="off" placeholder="كود الإدارة" onkeydown="if(event.key===&#39;Enter&#39;)unlockAdmin()">
      <button class="gate-btn manager-btn" onclick="unlockAdmin()">فتح غرفة التحكم</button>
      <div id="adminError" class="gate-error"></div>
      <div class="gate-note">وصول إداري إلى السجل المركزي، بيانات الفريق، والأكواد.</div>
    </div>
-
-   <div class="gate-meta"><span class="chip">DARK / LIGHT</span><span class="chip">PRIVATE TEAM</span><span class="chip">ONE HTML</span></div>
  </div>
 </section>
 
@@ -244,7 +325,7 @@ body,.panel,.stat,.topbar,.gate-card,.modal-card,.entry-card,.summary-card,.exit
   <div class="tools"><button class="btn primary" onclick="openEditor()">＋ إضافة كاتب</button><button class="btn" onclick="exportData()">تصدير</button><button class="btn" onclick="document.getElementById(&#39;importFile&#39;).click()">استيراد</button><button class="btn" onclick="openCloudSettings()">☁ إعداد GitHub</button><button class="btn primary" onclick="publishNow()">↑ نشر إلى GitHub</button><span id="syncStatus" class="chip">غير متصل</span><input id="importFile" type="file" accept=".json" hidden="" onchange="importData(event)"></div></div>
   <div class="stats"><div class="stat"><div class="label">إجمالي السجلات</div><div class="value" id="aTotal">13</div></div><div class="stat"><div class="label">منشور</div><div class="value" id="aPublished">1</div></div><div class="stat"><div class="label">مقبول</div><div class="value" id="aAccepted">0</div></div><div class="stat"><div class="label">خارج Con</div><div class="value" id="aOut">3</div></div></div>
   <div class="panel"><div class="panel-head"><h3>السجل المركزي</h3><div class="tools"><input id="adminSearch" class="search" placeholder="ابحث..." oninput="renderAdmin()"><select id="adminFilter" class="search" style="min-width:160px" onchange="renderAdmin()"><option value="">كل الحالات</option><option>نشط</option><option>متوقف</option><option>غادر</option><option>خارج Con</option></select></div></div>
-  <div class="table-wrap"><table class="table"><thead><tr><th>الكاتب</th><th>الكود</th><th>المقالات</th><th>النشر</th><th>التقرير</th><th>المرحلة</th><th>مكان النشر</th><th>إجراء</th></tr></thead><tbody id="adminRows"><tr><td class="namecell">جنى الورداني</td><td class="code">CON-7J4K</td><td>0</td><td><span class="tag green">● منشور</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(0)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(0)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(0)">×</button></div></td></tr><tr><td class="namecell">نور شوقي</td><td class="code">CON-9Q2M</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag blue">● جاري المراجعة</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(1)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(1)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(1)">×</button></div></td></tr><tr><td class="namecell">ريم نديم</td><td class="code">CON-4X8P</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(2)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(2)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(2)">×</button></div></td></tr><tr><td class="namecell">أسماء حمدي</td><td class="code">CON-6N3R</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(3)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(3)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(3)">×</button></div></td></tr><tr><td class="namecell">منار فوزي</td><td class="code">CON-8V5T</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(4)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(4)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(4)">×</button></div></td></tr><tr><td class="namecell">روميساء علي</td><td class="code">CON-3K7Z</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(5)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(5)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(5)">×</button></div></td></tr><tr><td class="namecell">أسماء كمال</td><td class="code">CON-5H2W</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(6)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(6)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(6)">×</button></div></td></tr><tr><td class="namecell">أدهم محروس</td><td class="code">CON-1D9L</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(7)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(7)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(7)">×</button></div></td></tr><tr><td class="namecell">شدن محمد</td><td class="code">CON-2F6A</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(8)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(8)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(8)">×</button></div></td></tr><tr><td class="namecell">جوري محمد</td><td class="code">CON-3P8B</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(9)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(9)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(9)">×</button></div></td></tr><tr><td class="namecell">سارة وليد</td><td class="code">CON-7M1C</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(10)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(10)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(10)">×</button></div></td></tr><tr><td class="namecell">أدهم نصار</td><td class="code">CON-4R9E</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(11)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(11)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(11)">×</button></div></td></tr><tr><td class="namecell">SYNC TEST</td><td class="code">55555</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(12)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(12)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(12)">×</button></div></td></tr></tbody></table></div></div>
+  <div class="table-wrap"><table class="table"><thead><tr><th>الكاتب</th><th>الكود</th><th>المقالات</th><th>النشر</th><th>التقرير</th><th>المرحلة</th><th>مكان النشر</th><th>إجراء وتقييم</th></tr></thead><tbody id="adminRows"><tr><td class="namecell">جنى الورداني</td><td class="code">CON-7J4K</td><td>0</td><td><span class="tag green">● منشور</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(0)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(0)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(0)">×</button></div></td></tr><tr><td class="namecell">نور شوقي</td><td class="code">CON-9Q2M</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag blue">● جاري المراجعة</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(1)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(1)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(1)">×</button></div></td></tr><tr><td class="namecell">ريم نديم</td><td class="code">CON-4X8P</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(2)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(2)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(2)">×</button></div></td></tr><tr><td class="namecell">أسماء حمدي</td><td class="code">CON-6N3R</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(3)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(3)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(3)">×</button></div></td></tr><tr><td class="namecell">منار فوزي</td><td class="code">CON-8V5T</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(4)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(4)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(4)">×</button></div></td></tr><tr><td class="namecell">روميساء علي</td><td class="code">CON-3K7Z</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(5)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(5)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(5)">×</button></div></td></tr><tr><td class="namecell">أسماء كمال</td><td class="code">CON-5H2W</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(6)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(6)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(6)">×</button></div></td></tr><tr><td class="namecell">أدهم محروس</td><td class="code">CON-1D9L</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(7)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(7)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(7)">×</button></div></td></tr><tr><td class="namecell">شدن محمد</td><td class="code">CON-2F6A</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(8)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(8)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(8)">×</button></div></td></tr><tr><td class="namecell">جوري محمد</td><td class="code">CON-3P8B</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(9)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(9)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(9)">×</button></div></td></tr><tr><td class="namecell">سارة وليد</td><td class="code">CON-7M1C</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(10)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(10)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(10)">×</button></div></td></tr><tr><td class="namecell">أدهم نصار</td><td class="code">CON-4R9E</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(11)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(11)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(11)">×</button></div></td></tr><tr><td class="namecell">SYNC TEST</td><td class="code">55555</td><td>0</td><td><span class="tag yellow">● لم ينشر</span></td><td><span class="tag gray">● لم يُحدد</span></td><td><span class="tag yellow">● جاري التدقيق</span></td><td><span class="tag gray">● غير محدد</span></td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(12)">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(12)">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(12)">×</button></div></td></tr></tbody></table></div></div>
 </section>
 
 <section id="writer" class="view">
@@ -282,7 +363,7 @@ body,.panel,.stat,.topbar,.gate-card,.modal-card,.entry-card,.summary-card,.exit
         <div class="info latest-article-info"><small>عنوان آخر مقال</small><strong id="wpLatestArticle">لم يُسجّل بعد</strong></div>
         <div class="info"><small>الترتيب الحالي</small><strong id="wpRankInfo">—</strong></div>
       </div>
-      <div class="timeline"><h3>سجل الملاحظات</h3><div id="wpTimeline"></div></div>
+      <div class="article-status-panel"><div class="article-status-head"><h3>حالة المقالة الحالية</h3><small>تُحدَّث من لوحة الإدارة</small></div><div class="article-status-grid"><div class="status-item"><small>القبول / الرفض</small><strong id="wpArticleDecision">—</strong></div><div class="status-item"><small>المرحلة الحالية</small><strong id="wpArticleStage">—</strong></div><div class="status-item"><small>المراجعة</small><strong id="wpReviewStatus">—</strong></div><div class="status-item"><small>التدقيق</small><strong id="wpProofStatus">—</strong></div><div class="status-item"><small>تاريخ إنهاء المراجعة</small><strong id="wpReviewEndDate">—</strong></div><div class="status-item"><small>عنوان المقالة</small><strong id="wpArticleTitle">لم يُسجّل بعد</strong></div><div class="status-item rating-box"><small>تقييم المقالة عن الشهر</small><div class="stars" id="wpRatingStars"></div></div></div></div><div class="timeline"><h3>سجل الملاحظات</h3><div id="wpTimeline"></div></div>
     </div>
   </div>
 </section>
@@ -308,11 +389,14 @@ body,.panel,.stat,.topbar,.gate-card,.modal-card,.entry-card,.summary-card,.exit
 <div class="modal" id="editorModal"><div class="modal-card"><div class="modal-head"><h3 id="editorTitle">تعديل بيانات الكاتب</h3><button class="iconbtn" onclick="closeEditor()">×</button></div><div class="modal-body">
 <div class="notice">يمكنك تغيير الأكواد من هنا. بعد التعديل، صدّر نسخة JSON إذا أردت الاحتفاظ بنسخة بيانات منفصلة.</div>
 <form onsubmit="saveWriter(event)"><input type="hidden" id="editIndex" value="1"><div class="form-grid">
-<div class="field"><label>اسم الكاتب</label><input id="fName" required=""></div><div class="field"><label>الكود السري</label><input id="fCode" required="" maxlength="20"></div>
-<div class="field"><label>عدد المقالات</label><input id="fArticles" type="number" min="0" value="0" required=""></div><div class="field"><label>حالة النشر</label><select id="fPub"><option>منشور</option><option>لم ينشر</option></select></div>
-<div class="field"><label>التقرير</label><select id="fReport"><option>مقبول</option><option>مرفوض</option><option>لم يُحدد</option></select></div><div class="field"><label>المرحلة</label><select id="fStage"><option>جاري التدقيق</option><option>جاري المراجعة</option><option>تمت المراجعة</option></select></div>
-<div class="field"><label>محل النشر</label><select id="fPlace"><option>الموقع الإلكتروني</option><option>المجلة الإلكترونية</option><option>غير محدد</option></select></div><div class="field"><label>الإنذارات</label><input id="fWarnings" type="number" min="0" value="0"></div>
-<div class="field"><label>الحالة داخل Con</label><select id="fEmployment"><option>نشط</option><option>متوقف</option><option>غادر</option><option>خارج Con</option></select></div><div class="field"><label>ملاحظة إدارية</label><textarea id="fNotes" rows="3"></textarea></div>
+<div class="field"><label>اسم الكاتب</label><input id="fName" required=""></div><div class="field"><label>الكود السري</label><input id="fCode" required="" maxlength="20" autocomplete="off"></div>
+<div class="field"><label>عدد المقالات</label><input id="fArticles" type="number" min="0" value="0" required=""></div><div class="field"><label>عنوان المقالة الحالية</label><input id="fLatestArticle" maxlength="180" placeholder="عنوان المقالة"></div>
+<div class="field"><label>القبول / الرفض</label><select id="fReport"><option>لم يُحدد</option><option>مقبول</option><option>مرفوض</option></select></div><div class="field"><label>المرحلة الحالية</label><select id="fStage"><option>جاري المراجعة</option><option>جاري التدقيق</option><option>تمت المراجعة</option><option>مكتملة</option></select></div>
+<div class="field"><label>حالة المراجعة</label><select id="fReview"><option>لم تبدأ</option><option>جارية</option><option>مكتملة</option></select></div><div class="field"><label>حالة التدقيق</label><select id="fProof"><option>لم يبدأ</option><option>جارٍ</option><option>مكتمل</option></select></div>
+<div class="field"><label>تاريخ إنهاء المراجعة</label><input id="fReviewEndDate" type="date"></div><div class="field"><label>حالة النشر</label><select id="fPub"><option>منشور</option><option>لم ينشر</option></select></div>
+<div class="field"><label>محل النشر</label><select id="fPlace"><option>الموقع الإلكتروني</option><option>المجلة الإلكترونية</option><option>غير محدد</option></select></div><div class="field"><label>تقييم المقالة عن الشهر</label><select id="fRating"><option value="0">بدون تقييم</option><option value="1">★ 1 / 5</option><option value="2">★ 2 / 5</option><option value="3">★ 3 / 5</option><option value="4">★ 4 / 5</option><option value="5">★ 5 / 5</option></select><div class="stars" id="editorStars" style="margin-top:8px"></div></div>
+<div class="field"><label>الإنذارات</label><input id="fWarnings" type="number" min="0" value="0"></div><div class="field"><label>الحالة داخل Con</label><select id="fEmployment"><option>نشط</option><option>متوقف</option><option>غادر</option><option>خارج Con</option></select></div>
+<div class="field" style="grid-column:1/-1"><label>ملاحظة إدارية <span style="font-weight:400">(حد أقصى 100 كلمة)</span></label><textarea id="fNotes" rows="5" maxlength="1200" placeholder="اكتب الملاحظة الإدارية هنا…"></textarea><div class="char-counter"><span>الحد الأقصى: 100 كلمة</span><span id="notesCount">0 / 100 كلمة</span></div></div>
 </div><div class="form-actions"><button class="btn primary" type="submit">حفظ التغييرات</button><button class="btn" type="button" onclick="closeEditor()">إلغاء</button></div></form>
 </div></div></div>
 <div class="toast" id="toast">تم حفظ البيانات.</div>
@@ -323,7 +407,7 @@ body,.panel,.stat,.topbar,.gate-card,.modal-card,.entry-card,.summary-card,.exit
    غيّر ADMIN_CODE إلى كود الإدارة الذي تريده.
    أكواد الكتّاب موجودة داخل بيانات SEED.
    ================================ */
-const ADMIN_CODE='CON-ADMIN';
+const ADMIN_CODE='252005';
 let writers=[];
 let dataReady=false;
 let remoteMeta=null;
@@ -546,73 +630,24 @@ function tag(v){return`<span class="tag ${tagClass(v)}">● ${escapeHtml(v)}</sp
 function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
 function setText(id,v){const e=document.getElementById(id);if(e)e.textContent=v}
 function updateStats(){const total=writers.length,active=writers.filter(w=>w.employmentStatus==='نشط').length,articles=writers.reduce((a,w)=>a+(+w.articleCount||0),0),review=writers.filter(w=>['جاري التدقيق','جاري المراجعة'].includes(w.stage)).length;setText('sTotal',total);setText('sActive',active);setText('sArticles',articles);setText('sReview',review);setText('aTotal',total);setText('aPublished',writers.filter(w=>w.publicationStatus==='منشور').length);setText('aAccepted',writers.filter(w=>w.reportStatus==='مقبول').length);setText('aOut',writers.filter(w=>['غادر','خارج Con'].includes(w.employmentStatus)).length)}
-function renderHome(){const q=(document.getElementById('homeSearch')?.value||'').trim().toLowerCase(),arr=writers.filter(w=>(w.name+' '+w.code).toLowerCase().includes(q));document.getElementById('homeRows').innerHTML=arr.length?arr.map(w=>`<tr><td class="namecell">${escapeHtml(w.name)}</td><td class="code">${escapeHtml(w.code)}</td><td>${w.articleCount}</td><td>${tag(w.publicationStatus)}</td><td>${tag(w.reportStatus)}</td><td>${tag(w.stage)}</td><td><button class="iconbtn" onclick="openWriterByIndex(${writers.indexOf(w)})">›</button></td></tr>`).join(''):`<tr><td colspan="7" class="empty">لا توجد نتائج.</td></tr>`}
-function renderAdmin(){if(accessRole!=='admin')return;const q=(document.getElementById('adminSearch')?.value||'').trim().toLowerCase(),f=document.getElementById('adminFilter')?.value||'',arr=writers.filter(w=>(w.name+' '+w.code).toLowerCase().includes(q)&&(!f||w.employmentStatus===f));document.getElementById('adminRows').innerHTML=arr.length?arr.map(w=>{const i=writers.indexOf(w);return`<tr><td class="namecell">${escapeHtml(w.name)}</td><td class="code">${escapeHtml(w.code)}</td><td>${w.articleCount}</td><td>${tag(w.publicationStatus)}</td><td>${tag(w.reportStatus)}</td><td>${tag(w.stage)}</td><td>${tag(w.publishPlace)}</td><td><div style="display:flex;gap:6px"><button class="iconbtn" title="تعديل" onclick="openEditor(${i})">✎</button><button class="iconbtn" title="عرض" onclick="openWriterByIndex(${i})">◉</button><button class="iconbtn" title="حذف" onclick="deleteWriter(${i})">×</button></div></td></tr>`}).join(''):`<tr><td colspan="8" class="empty">لا توجد نتائج.</td></tr>`}
+function renderHome(){const q=(document.getElementById('homeSearch')?.value||'').trim().toLowerCase(),arr=writers.filter(w=>(w.name+' '+w.code+' '+(w.latestArticleTitle||'')).toLowerCase().includes(q));document.getElementById('homeRows').innerHTML=arr.length?arr.map(w=>`<tr><td class="namecell">${escapeHtml(w.name)}</td><td class="code">${escapeHtml(w.code)}</td><td>${w.articleCount}</td><td>${tag(w.publicationStatus)}</td><td>${tag(w.reportStatus)}</td><td>${tag(w.stage)}</td><td><button class="iconbtn" title="عرض ملف الكاتب" aria-label="عرض ملف الكاتب" onclick="openWriterByIndex(${writers.indexOf(w)})">›</button></td></tr>`).join(''):`<tr><td colspan="7" class="empty">لا توجد نتائج.</td></tr>`}
+function renderAdmin(){if(accessRole!=='admin')return;const q=(document.getElementById('adminSearch')?.value||'').trim().toLowerCase(),f=document.getElementById('adminFilter')?.value||'',arr=writers.filter(w=>(w.name+' '+w.code+' '+(w.latestArticleTitle||'')).toLowerCase().includes(q)&&(!f||w.employmentStatus===f));document.getElementById('adminRows').innerHTML=arr.length?arr.map(w=>{const i=writers.indexOf(w),rating=+w.monthlyRating||0;return`<tr><td class="namecell">${escapeHtml(w.name)}</td><td class="code">${escapeHtml(w.code)}</td><td>${w.articleCount}</td><td>${tag(w.publicationStatus)}</td><td>${tag(w.reportStatus)}</td><td>${tag(w.stage)}</td><td>${tag(w.publishPlace)}</td><td><div class="admin-actions"><button class="iconbtn" title="تعديل جميع البيانات" aria-label="تعديل" onclick="openEditor(${i})">✎</button><button class="iconbtn" title="عرض الملف" aria-label="عرض" onclick="openWriterByIndex(${i})">◉</button><button class="iconbtn" title="حذف الكاتب" aria-label="حذف" onclick="deleteWriter(${i})">×</button></div><div class="admin-quick"><strong>${rating?`★ ${rating}/5`:'بدون تقييم'}</strong>${w.latestArticleTitle?`<span class="tag gray">${escapeHtml(w.latestArticleTitle)}</span>`:''}</div></td></tr>`}).join(''):`<tr><td colspan="8" class="empty">لا توجد نتائج.</td></tr>`}
 function openWriterByIndex(i){if(accessRole!=='admin')return;currentWriter=writers[i];fillProfile(currentWriter);showView('writer')}
 function getWriterRank(w){
   const sorted=[...writers].sort((a,b)=>(+b.articleCount||0)-(+a.articleCount||0));
   const score=+w.articleCount||0;
   return sorted.findIndex(x=>(+x.articleCount||0)===score)+1;
 }
-function fillProfile(w){
-  if(!w)return;
-  const latest=w.latestArticleTitle||'لم يُسجّل بعد';
-  const rank=getWriterRank(w);
-  setText('wpName',w.name);
-  setText('wpSideName',w.name);
-  setText('wpEmployment',w.employmentStatus);
-  setText('wpArticles',w.articleCount);
-  setText('wpTotalArticles',w.articleCount);
-  setText('wpWarnings',w.warningCount);
-  setText('wpCode',w.code);
-  setText('wpPub',w.publicationStatus);
-  setText('wpReport',w.reportStatus);
-  setText('wpStage',w.stage);
-  setText('wpPlace',w.publishPlace);
-  setText('wpLatestHero','آخر مقال: '+latest);
-  setText('wpLatestCard',latest);
-  setText('wpLatestArticle',latest);
-  setText('wpRank',`المركز ${rank}`);
-  setText('wpRankInfo',`المركز ${rank} من أصل ${writers.length}`);
-  setText('wpRankDetail',`من أصل ${writers.length} كاتب`);
-  setText('wpStatusCard',w.employmentStatus);
-  setText('wpAvatar',(w.name||'ك').trim()[0]);
-  document.getElementById('wpTimeline').innerHTML=
-    `<div class="event"><span class="event-dot"></span><div><b>الحالة الحالية</b><span>${escapeHtml(w.stage)} — ${escapeHtml(w.publicationStatus)}</span></div></div>
-     <div class="event"><span class="event-dot"></span><div><b>آخر مقال</b><span>${escapeHtml(latest)}</span></div></div>
-     <div class="event"><span class="event-dot"></span><div><b>محل النشر</b><span>${escapeHtml(w.publishPlace)}</span></div></div>
-     <div class="event"><span class="event-dot"></span><div><b>ملاحظات الإدارة</b><span>${escapeHtml(w.notes||'لا توجد ملاحظات.')}</span></div></div>`;
-}
-function openEditor(index=null){
-  if(accessRole!=='admin')return;
-  document.getElementById('editorModal').classList.add('show');
-  document.getElementById('editorTitle').textContent=index===null?'إضافة كاتب':'تعديل بيانات الكاتب';
-  document.getElementById('editIndex').value=index??'';
-  const w=index===null?{name:'',code:makeCode(),articleCount:0,latestArticleTitle:'',publicationStatus:'لم ينشر',reportStatus:'لم يُحدد',stage:'جاري التدقيق',publishPlace:'غير محدد',warningCount:0,employmentStatus:'نشط',notes:''}:writers[index];
-  setVal('fName',w.name);setVal('fCode',w.code);setVal('fArticles',w.articleCount);
-  setVal('fLatestArticle',w.latestArticleTitle||'');setVal('fPub',w.publicationStatus);
-  setVal('fReport',w.reportStatus);setVal('fStage',w.stage);setVal('fPlace',w.publishPlace);
-  setVal('fWarnings',w.warningCount);setVal('fEmployment',w.employmentStatus);setVal('fNotes',w.notes||'');
-}
+function ratingStars(rating,editable=false){const n=Math.max(0,Math.min(5,+rating||0));return Array.from({length:5},(_,i)=>{const v=5-i;return editable?`<span class="${v<=n?'on':''}" role="button" tabindex="0" title="${v} من 5" onclick="setRating(${v})">★</span>`:`<span class="${v<=n?'on':''}">★</span>`}).join('')}
+function setRating(v){const e=document.getElementById('fRating');if(e)e.value=String(v);const out=document.getElementById('editorStars');if(out)out.innerHTML=ratingStars(v,true)}
+function normalizeWriter(w){const x={...w},st=String(x.stage||'').trim();x.reviewStatus=x.reviewStatus||((st==='جاري المراجعة')?'جارية':(st==='تمت المراجعة'||st==='مكتملة')?'مكتملة':'لم تبدأ');x.proofreadingStatus=x.proofreadingStatus||((st==='جاري التدقيق')?'جارٍ':(st==='تمت المراجعة'||st==='مكتملة')?'مكتمل':'لم يبدأ');x.monthlyRating=+x.monthlyRating||0;x.reviewEndDate=x.reviewEndDate||'';return x}
+function fillProfile(w){if(!w)return;w=normalizeWriter(w);const latest=w.latestArticleTitle||'لم يُسجّل بعد',rank=getWriterRank(w),reviewEnd=w.reviewEndDate?new Date(w.reviewEndDate+'T00:00:00').toLocaleDateString('ar-EG',{year:'numeric',month:'long',day:'numeric'}):'لم يُحدد';setText('wpName',w.name);setText('wpSideName',w.name);setText('wpEmployment',w.employmentStatus);setText('wpArticles',w.articleCount);setText('wpTotalArticles',w.articleCount);setText('wpWarnings',w.warningCount);setText('wpCode',w.code);setText('wpPub',w.publicationStatus);setText('wpReport',w.reportStatus);setText('wpStage',w.stage);setText('wpPlace',w.publishPlace);setText('wpLatestHero','آخر مقال: '+latest);setText('wpLatestCard',latest);setText('wpLatestArticle',latest);setText('wpRank',`المركز ${rank}`);setText('wpRankInfo',`المركز ${rank} من أصل ${writers.length}`);setText('wpRankDetail',`من أصل ${writers.length} كاتب`);setText('wpStatusCard',w.employmentStatus);setText('wpAvatar',(w.name||'ك').trim()[0]);setText('wpArticleDecision',w.reportStatus||'لم يُحدد');setText('wpArticleStage',w.stage||'—');setText('wpReviewStatus',w.reviewStatus);setText('wpProofStatus',w.proofreadingStatus);setText('wpReviewEndDate',reviewEnd);setText('wpArticleTitle',latest);const rs=document.getElementById('wpRatingStars');if(rs)rs.innerHTML=ratingStars(w.monthlyRating);document.getElementById('wpTimeline').innerHTML=`<div class="event"><span class="event-dot"></span><div><b>الحالة الحالية</b><span>${escapeHtml(w.stage)} — ${escapeHtml(w.publicationStatus)}</span></div></div><div class="event"><span class="event-dot"></span><div><b>المراجعة والتدقيق</b><span>${escapeHtml(w.reviewStatus)} — ${escapeHtml(w.proofreadingStatus)}</span></div></div><div class="event"><span class="event-dot"></span><div><b>آخر مقال</b><span>${escapeHtml(latest)}</span></div></div><div class="event"><span class="event-dot"></span><div><b>محل النشر</b><span>${escapeHtml(w.publishPlace)}</span></div></div><div class="event"><span class="event-dot"></span><div><b>ملاحظات الإدارة</b><span>${escapeHtml(w.notes||'لا توجد ملاحظات.')}</span></div></div>`}
+function openEditor(index=null){if(accessRole!=='admin')return;document.getElementById('editorModal').classList.add('show');document.getElementById('editorTitle').textContent=index===null?'إضافة كاتب':'تعديل بيانات الكاتب';document.getElementById('editIndex').value=index??'';const w=normalizeWriter(index===null?{name:'',code:makeCode(),articleCount:0,latestArticleTitle:'',publicationStatus:'لم ينشر',reportStatus:'لم يُحدد',stage:'جاري التدقيق',reviewStatus:'لم تبدأ',proofreadingStatus:'جارٍ',reviewEndDate:'',monthlyRating:0,publishPlace:'غير محدد',warningCount:0,employmentStatus:'نشط',notes:''}:writers[index]);setVal('fName',w.name);setVal('fCode',w.code);setVal('fArticles',w.articleCount);setVal('fLatestArticle',w.latestArticleTitle||'');setVal('fPub',w.publicationStatus);setVal('fReport',w.reportStatus);setVal('fStage',w.stage);setVal('fReview',w.reviewStatus);setVal('fProof',w.proofreadingStatus);setVal('fReviewEndDate',w.reviewEndDate||'');setVal('fPlace',w.publishPlace);setVal('fRating',w.monthlyRating||0);setVal('fWarnings',w.warningCount);setVal('fEmployment',w.employmentStatus);setVal('fNotes',w.notes||'');const stars=document.getElementById('editorStars');if(stars)stars.innerHTML=ratingStars(w.monthlyRating,true);updateNotesCounter()}
 function closeEditor(){document.getElementById('editorModal').classList.remove('show')}
 function setVal(id,v){const e=document.getElementById(id);if(e)e.value=v}
-function saveWriter(e){
-  e.preventDefault();
-  const index=document.getElementById('editIndex').value;
-  const w={
-    name:fName.value.trim(),code:fCode.value.trim().toUpperCase(),articleCount:+fArticles.value||0,
-    latestArticleTitle:(document.getElementById('fLatestArticle')?.value||'').trim(),
-    publicationStatus:fPub.value,reportStatus:fReport.value,stage:fStage.value,publishPlace:fPlace.value,
-    warningCount:+fWarnings.value||0,employmentStatus:fEmployment.value,notes:fNotes.value.trim()
-  };
-  if(!w.name||!w.code){toast('أكمل اسم الكاتب والكود.');return}
-  if(w.code===ADMIN_CODE){toast('لا تستخدم كود الإدارة لكاتب.');return}
-  const duplicate=writers.findIndex((x,i)=>x.code===w.code&&String(i)!==String(index));
-  if(duplicate>-1){toast('هذا الكود مستخدم بالفعل.');return}
-  const backup=writers.map(x=>({...x}));
-  if(index==='')writers.push(w);else writers[+index]=w;
-  persist({type:'upsert',writer:w}).then(ok=>{if(ok){closeEditor();toast('تم نشر التعديل على الموقع.')}else{writers=backup;updateStats();renderHome();renderAdmin();}});
-}
+function wordCount(text){return (String(text||'').trim().match(/\S+/g)||[]).length}
+function updateNotesCounter(){const e=document.getElementById('fNotes'),c=document.getElementById('notesCount');if(!e||!c)return;const n=wordCount(e.value);c.textContent=`${n} / 100 كلمة`;c.classList.toggle('limit',n>100)}
+function saveWriter(e){e.preventDefault();const index=document.getElementById('editIndex').value,notes=(document.getElementById('fNotes')?.value||'').trim();if(wordCount(notes)>100){toast('الملاحظة الإدارية يجب ألا تتجاوز 100 كلمة.');return}const w={name:fName.value.trim(),code:fCode.value.trim().toUpperCase(),articleCount:+fArticles.value||0,latestArticleTitle:(document.getElementById('fLatestArticle')?.value||'').trim(),publicationStatus:fPub.value,reportStatus:fReport.value,stage:fStage.value,reviewStatus:fReview.value,proofreadingStatus:fProof.value,reviewEndDate:(document.getElementById('fReviewEndDate')?.value||'').trim(),monthlyRating:+(document.getElementById('fRating')?.value||0),publishPlace:fPlace.value,warningCount:+fWarnings.value||0,employmentStatus:fEmployment.value,notes};if(!w.name||!w.code){toast('أكمل اسم الكاتب والكود.');return}if(w.code===ADMIN_CODE){toast('لا تستخدم كود الإدارة لكاتب.');return}const duplicate=writers.findIndex((x,i)=>x.code===w.code&&String(i)!==String(index));if(duplicate>-1){toast('هذا الكود مستخدم بالفعل.');return}const backup=writers.map(x=>({...x}));if(index==='')writers.push(w);else writers[+index]=w;updateStats();renderHome();renderAdmin();persist({type:'upsert',writer:w}).then(ok=>{if(ok){closeEditor();toast('تم نشر التعديل على الموقع.')}else{writers=backup;updateStats();renderHome();renderAdmin()}})}
 function logoutWriter(){
   if(accessRole!=='writer'){lockSystem();return}
   const w=currentWriter;
@@ -639,7 +674,7 @@ function makeCode(){return'CON-'+Math.random().toString(36).slice(2,6).toUpperCa
 function exportData(){if(accessRole!=='admin')return;const blob=new Blob([JSON.stringify(writers,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='ana-kawn-writers-data.json';a.click();URL.revokeObjectURL(a.href);toast('تم تصدير ملف البيانات.')}
 function importData(e){if(accessRole!=='admin')return;const file=e.target.files[0];if(!file)return;const r=new FileReader();r.onload=()=>{try{const data=JSON.parse(r.result);if(!Array.isArray(data))throw Error();const backup=writers;writers=data;persist().then(ok=>{if(ok)toast('تم استيراد البيانات ونشرها.');else writers=backup})}catch{toast('ملف JSON غير صالح.')}};r.readAsText(file);e.target.value=''}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(window.__t);window.__t=setTimeout(()=>t.classList.remove('show'),2600)}
-document.getElementById('editorModal').addEventListener('click',e=>{if(e.target.id==='editorModal')closeEditor()});
+document.getElementById('editorModal').addEventListener('click',e=>{if(e.target.id==='editorModal')closeEditor()});document.getElementById('fNotes')?.addEventListener('input',updateNotesCounter);document.getElementById('fRating')?.addEventListener('change',e=>setRating(e.target.value));
 updateStats();renderHome();renderAdmin();
 loadRemoteData();
 setTimeout(()=>document.getElementById('accessCode').focus(),120);
@@ -649,10 +684,10 @@ setTimeout(()=>document.getElementById('accessCode').focus(),120);
 (function(){
  const c=document.getElementById('ultimateCanvas'),x=c.getContext('2d');let ps=[];
  function size(){c.width=innerWidth*devicePixelRatio;c.height=innerHeight*devicePixelRatio;c.style.width=innerWidth+'px';c.style.height=innerHeight+'px';x.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);ps=Array.from({length:Math.min(95,Math.floor(innerWidth/14))},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22,r:Math.random()*1.4+.35}))}
- function draw(){x.clearRect(0,0,innerWidth,innerHeight);const light=document.body.classList.contains('light');x.fillStyle=light?'rgba(0,140,175,.28)':'rgba(69,231,255,.35)';ps.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>innerWidth)p.vx*=-1;if(p.y<0||p.y>innerHeight)p.vy*=-1;x.beginPath();x.arc(p.x,p.y,p.r,0,Math.PI*2);x.fill()});requestAnimationFrame(draw)}
+ function draw(){x.clearRect(0,0,innerWidth,innerHeight);const dark=document.body.classList.contains('con-dark');x.fillStyle=dark?'rgba(213,119,137,.24)':'rgba(125,48,65,.16)';ps.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>innerWidth)p.vx*=-1;if(p.y<0||p.y>innerHeight)p.vy*=-1;x.beginPath();x.arc(p.x,p.y,p.r,0,Math.PI*2);x.fill()});requestAnimationFrame(draw)}
  window.addEventListener('resize',size);size();draw();
- window.toggleUltimateTheme=function(){document.body.classList.toggle('light');localStorage.setItem('ana_kawn_theme',document.body.classList.contains('light')?'light':'dark')};
- if(localStorage.getItem('ana_kawn_theme')==='light')document.body.classList.add('light');
+ window.toggleUltimateTheme=function(){const dark=!document.body.classList.contains('con-dark');document.body.classList.toggle('con-dark',dark);document.body.classList.remove('light');localStorage.setItem('con_theme_v2',dark?'dark':'light')};
+ const savedTheme=localStorage.getItem('con_theme_v2');if(savedTheme==='dark')document.body.classList.add('con-dark');else document.body.classList.remove('con-dark','light');
  function clock(){let d=new Date();let s=d.toLocaleTimeString('ar-EG',{hour:'2-digit',minute:'2-digit'});let e=document.getElementById('clock');if(e)e.textContent=s}
  clock();setInterval(clock,1000);
 })();
