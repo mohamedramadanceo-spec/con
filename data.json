@@ -3,14 +3,18 @@
     "name": "جنى الورداني",
     "code": "CON10",
     "articleCount": 4,
-    "latestArticleTitle": "",
+    "latestArticleTitle": "الذهان",
     "publicationStatus": "لم ينشر",
     "reportStatus": "مقبول",
     "stage": "تمت المراجعة",
+    "reviewStatus": "مكتملة",
+    "proofreadingStatus": "مكتمل",
+    "reviewEndDate": "2026-08-21",
+    "monthlyRating": 2,
     "publishPlace": "الموقع الإلكتروني",
     "warningCount": 0,
     "employmentStatus": "نشط",
-    "notes": "آخر مقالة: أغسطس عن الذهان."
+    "notes": ""
   },
   {
     "name": "نور شوقي",
