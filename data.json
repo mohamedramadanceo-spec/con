@@ -16,14 +16,18 @@
     "name": "نور شوقي",
     "code": "CON9",
     "articleCount": 5,
-    "latestArticleTitle": "",
+    "latestArticleTitle": "العلمانية الغربية",
     "publicationStatus": "لم ينشر",
     "reportStatus": "مقبول",
     "stage": "تمت المراجعة",
+    "reviewStatus": "مكتملة",
+    "proofreadingStatus": "جارٍ",
+    "reviewEndDate": "",
+    "monthlyRating": 2,
     "publishPlace": "المجلة الإلكترونية",
     "warningCount": 2,
     "employmentStatus": "نشط",
-    "notes": "آخر مقالة (العلمانية)"
+    "notes": ""
   },
   {
     "name": "ريم نديم",
