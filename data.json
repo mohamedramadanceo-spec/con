@@ -68,14 +68,18 @@
     "name": "أسماء كمال",
     "code": "CON4",
     "articleCount": 4,
-    "latestArticleTitle": "",
-    "publicationStatus": "لم ينشر",
+    "latestArticleTitle": "الذي علمه الخوف",
+    "publicationStatus": "منشور",
     "reportStatus": "مقبول",
     "stage": "تمت المراجعة",
+    "reviewStatus": "مكتملة",
+    "proofreadingStatus": "مكتمل",
+    "reviewEndDate": "2026-08-07",
+    "monthlyRating": 2,
     "publishPlace": "المجلة الإلكترونية",
     "warningCount": 1,
     "employmentStatus": "نشط",
-    "notes": "يونيو: إنذار.\nنشر للكاتبة 3 مقالات، آخرهم (عن ملك سليمان)، وينشر لها (كيف تصنع شريرًا)."
+    "notes": "يونيو: إنذار."
   },
   {
     "name": "شدن محمد",
