@@ -94,14 +94,18 @@
     "name": "جوري محمد",
     "code": "CON1",
     "articleCount": 5,
-    "latestArticleTitle": "",
+    "latestArticleTitle": "الطريق الذي نعرفه",
     "publicationStatus": "منشور",
     "reportStatus": "مقبول",
-    "stage": "تمت المراجعة",
+    "stage": "مكتملة",
+    "reviewStatus": "مكتملة",
+    "proofreadingStatus": "مكتمل",
+    "reviewEndDate": "2026-08-30",
+    "monthlyRating": 3,
     "publishPlace": "المجلة الإلكترونية",
     "warningCount": 0,
     "employmentStatus": "نشط",
-    "notes": "آخر مقالة (مجلة): الطريق الذي نعرفه"
+    "notes": ""
   },
   {
     "name": "إيمان حسام",
