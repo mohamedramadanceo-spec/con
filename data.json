@@ -164,5 +164,22 @@
     "warningCount": 0,
     "employmentStatus": "نشط",
     "notes": "بلا انذارات - سجل نظيف - كاتب حديث الانضمام"
+  },
+  {
+    "name": "سندس السيد",
+    "code": "CON12",
+    "articleCount": 0,
+    "latestArticleTitle": "لم تكتب بعد",
+    "publicationStatus": "لم ينشر",
+    "reportStatus": "لم يُحدد",
+    "stage": "جاري التدقيق",
+    "reviewStatus": "لم تبدأ",
+    "proofreadingStatus": "لم يبدأ",
+    "reviewEndDate": "",
+    "monthlyRating": 0,
+    "publishPlace": "غير محدد",
+    "warningCount": 0,
+    "employmentStatus": "نشط",
+    "notes": "كاتبة حديثة الانضمام."
   }
 ]
