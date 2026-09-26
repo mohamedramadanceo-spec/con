@@ -53,19 +53,19 @@
   {
     "name": "أسماء حمدي",
     "code": "CON7",
-    "articleCount": 6,
-    "latestArticleTitle": "القراءة عالم بين ثنايا الأسطر",
+    "articleCount": 7,
+    "latestArticleTitle": "بين المقال الأدبي والخاطرة",
     "publicationStatus": "لم ينشر",
-    "reportStatus": "مقبول",
-    "stage": "تمت المراجعة",
-    "reviewStatus": "مكتملة",
-    "proofreadingStatus": "جارٍ",
+    "reportStatus": "لم يُحدد",
+    "stage": "جاري المراجعة",
+    "reviewStatus": "لم تبدأ",
+    "proofreadingStatus": "لم يبدأ",
     "reviewEndDate": "2026-08-31",
-    "monthlyRating": 1,
+    "monthlyRating": 0,
     "publishPlace": "الموقع الإلكتروني",
     "warningCount": 2,
     "employmentStatus": "نشط",
-    "notes": ""
+    "notes": "ترحل المراجعة للشهر القادم."
   },
   {
     "name": "روميساء علي",
