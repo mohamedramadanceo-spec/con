@@ -37,14 +37,18 @@
     "name": "ريم نديم",
     "code": "CON8",
     "articleCount": 2,
-    "latestArticleTitle": "",
+    "latestArticleTitle": "لم تسلم",
     "publicationStatus": "لم ينشر",
-    "reportStatus": "مقبول",
-    "stage": "تمت المراجعة",
-    "publishPlace": "الموقع الإلكتروني",
+    "reportStatus": "لم يُحدد",
+    "stage": "مكتملة",
+    "reviewStatus": "مكتملة",
+    "proofreadingStatus": "مكتمل",
+    "reviewEndDate": "",
+    "monthlyRating": 0,
+    "publishPlace": "غير محدد",
     "warningCount": 1,
     "employmentStatus": "متوقف",
-    "notes": ""
+    "notes": "لم تسلم الكاتبة هذا الشهر."
   },
   {
     "name": "أسماء حمدي",
