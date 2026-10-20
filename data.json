@@ -185,5 +185,22 @@
     "warningCount": 0,
     "employmentStatus": "نشط",
     "notes": "كاتبة حديثة الانضمام."
+  },
+  {
+    "name": "رغد أيمن",
+    "code": "CON13",
+    "articleCount": 0,
+    "latestArticleTitle": "",
+    "publicationStatus": "لم ينشر",
+    "reportStatus": "لم يُحدد",
+    "stage": "مكتملة",
+    "reviewStatus": "مكتملة",
+    "proofreadingStatus": "مكتمل",
+    "reviewEndDate": "",
+    "monthlyRating": 0,
+    "publishPlace": "غير محدد",
+    "warningCount": 0,
+    "employmentStatus": "نشط",
+    "notes": ""
   }
 ]
