@@ -202,5 +202,22 @@
     "warningCount": 0,
     "employmentStatus": "نشط",
     "notes": ""
+  },
+  {
+    "name": "سجى يحيى النَّحال",
+    "code": "CON14",
+    "articleCount": 0,
+    "latestArticleTitle": "",
+    "publicationStatus": "لم ينشر",
+    "reportStatus": "لم يُحدد",
+    "stage": "جاري التدقيق",
+    "reviewStatus": "لم تبدأ",
+    "proofreadingStatus": "جارٍ",
+    "reviewEndDate": "",
+    "monthlyRating": 0,
+    "publishPlace": "غير محدد",
+    "warningCount": 0,
+    "employmentStatus": "نشط",
+    "notes": ""
   }
 ]
